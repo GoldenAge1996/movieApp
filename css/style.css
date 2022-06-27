@@ -1,0 +1,98 @@
+body{
+ 
+    font-family: sans-serif;
+    color: white;
+
+}
+
+form{
+    display: flex;
+    justify-content: flex-end;
+ padding: 20px;
+    background-color: blue;
+}
+
+input{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(36, 36, 194);
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: white;
+    font-family: inherit;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.every{
+ margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.every .movie{
+    width: 300px;
+
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    background-color: blue;
+    position: relative;
+    overflow: hidden;
+ 
+}
+
+.every .movie img{
+    width: 100%;
+  
+    
+}
+
+.every .movie .info{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.every .movie .info h3{
+    margin-top: 0;
+}
+
+.overview{
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: white;
+color: black;
+transition: transform 0.3s ease-in;
+transform: translateY(101%);
+
+height: 80%;
+padding: 10px;
+}
+
+.movie:hover .overview{
+    transform: translateY(0%);
+}
+
+.info span.green{
+    color: lightgreen;
+}
+
+.info span.orange{
+    color: orange;
+}
+
+.info span.red{
+    color: red;
+}
